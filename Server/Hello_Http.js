@@ -2,6 +2,8 @@ var ejs = require('ejs-locals');
 var express = require('express');
 var app = express();
 
+var pq = require('pg');
+
 app.engine('html', ejs);
 app.engine('ejs', ejs);
 app.set('views', 'views');
