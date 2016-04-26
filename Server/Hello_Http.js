@@ -12,7 +12,7 @@ app.get('/*', function (req, res) {
 });
 
 app.post('/main', function (req, res) {
-  res.send(req.body.code);
+  res.render("./main", {Name: "Эрнесто Че Гевара", OrderForDates: "OOO", DeadlineOfOrder: "oOo", Praise1: "", Praise2: "1", Praise3: "1", Praise4: "1", Praise4: "1", Praise5: "1",Praise6: "1",Praise7: "1",Praise8: "1",Praise9: "1", Praise10: "1"});
 });
 
 app.listen(3000, function () {

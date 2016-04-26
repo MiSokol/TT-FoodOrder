@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <meta charset="utf-8">
+            <title>Заказ питания ученикам "Интеллектуала" - Главная</title>
+        </head>
+        <body>
+            <div class=" container" style="width: 760px;">
+                <div class="header" style="width: 760px;">
+                    <nav>
+                        <ul class="nav nav-pills pull-right">
+                            <li role="presentation" class="active">
+                                <a href="#">Главная</a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#">Справка</a>
+                            </li>    
+                            <li role="presentation">
+                                <a href="#">Контакты</a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#">Выход</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <h3 class="text-muted" style="width: 760px;">Заказ пакетов питания </h3> <hr>
+                    <br>
+                <h5><%= Name %></h5>                                  
+                <h4><%= OrderForDates %></h4>
+                <h4><%= DeadlineOfOrder %></h4>
+                </div>
+                <div class=" container" style="width: 760px;" >
+                <div class="header" style="width: 760px;" >
+                    <nav>
+                        <ul class="nav nav-pills ">
+                            <li role="presentation" class="active">
+                                <a href="#">Понедельник</a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#">Вторник</a>
+                            </li>    
+                            <li role="presentation">
+                                <a href="#">Среда</a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#">Четверг</a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#">Пятница</a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#">Суббота</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+               
+                <table class="table table-striped" style="width: 760px;">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Номер пакета</th> 
+                            <th>Состав пакета</th>  
+                            <th>Цена пакета&nbsp&nbsp&nbsp&nbsp&nbsp</th>                   
+                            <th style="width: 100px;">Выбрать</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Пакет 1</td>
+                            <td>Завтрак, второй завтрак, обед, полдник и ужин</td>
+                            <td><%= Praise1 %></td>
+                            <td><div class=&nbsp"checkbox"> <input type="checkbox">  </div></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Пакет 2</td>
+                            <td>Завтрак</td>
+                            <td><%= Praise2 %></td>
+                            <td><div class=&nbsp"checkbox"> <input type="checkbox">  </div></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Пакет 3</td>
+                            <td>Ужин</td>
+                            <td><%= Praise3 %></td>
+                            <td><div class=&nbsp"checkbox"> <input type="checkbox">  </div></td>
+                        </tr>
+                            <th scope="row">4</th>
+                            <td>Пакет 4</td>
+                            <td>Второй завтрак, обед, полдник, ужин</td>
+                            <td><%= Praise4 %></td>
+                            <td><div class=&nbsp"checkbox"> <input type="checkbox">  </div></td>
+                        </tr>
+                            <th scope="row">5</th>
+                            <td>Пакет 5</td>
+                            <td>Второй завтрак, обед, полдник </td>
+                            <td><%= Praise5 %></td>
+                            <td><div class=&nbsp"checkbox"> <input type="checkbox"> </div></td>
+                        </tr>
+                            <th scope="row">6</th>
+                            <td>Пакет 6</td>
+                            <td>Второй завтрак, обед</td>
+                            <td><%= Praise6 %></td>
+                            <td><div class=&nbsp"checkbox"> <input type="checkbox">  </div></td>
+                        </tr>
+                            <th scope="row">7</th>
+                            <td>Пакет 7</td>
+                            <td>Второй завтрак</td>
+                            <td><%= Praise7 %></td>
+                            <td><div class=&nbsp"checkbox"> <input type="checkbox">  </div></td>
+                        </tr>
+                            <th scope="row">8</th>
+                            <td>Пакет 8</td>
+                            <td>Обед</td>
+                            <td><%= Praise8 %></td>
+                            <td><div class=&nbsp"checkbox"> <input type="checkbox">  </div></td>
+                        </tr>
+                            <th scope="row">9</th>
+                            <td>Пакет 9</td>
+                            <td>Обед</td>
+                            <td><%= Praise9 %></td>
+                            <td><div class=&nbsp"checkbox"> <input type="checkbox">  </div></td>
+                        </tr>
+                            <th scope="row">10</th>
+                            <td>Пакет 10</td>
+                            <td>Полдник</td>
+                            <td><%= Praise10 %></td>
+                            <td><div class=&nbsp"checkbox"> <input type="checkbox">  </div></td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <footer class="footer">
+                    <a class="btn btn-lg btn-success" href="#" role="button">Отправить</a>
+                </footer>
+                <p>&copy; 19.03.2016, Inc.</p>
+            </div>
+
+
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+            <!-- /container -->
+        </body>
+    </html>
