@@ -14,7 +14,11 @@ app.get('/*', function (req, res) {
 });
 
 app.post('/main', function (req, res) {
-  res.render("./main", {Name: "Эрнесто Че Гевара", OrderForDates: "OOO", DeadlineOfOrder: "oOo", Praise1: "", Praise2: "1", Praise3: "1", Praise4: "1", Praise4: "1", Praise5: "1",Praise6: "1",Praise7: "1",Praise8: "1",Praise9: "1", Praise10: "1"});
+  res.render("./main", {Name: "Эрнесто Че Гевара", OrderForDates: "25.04 - 30.04", DeadlineOfOrder: "23.04", Price1: "1", Price2: "1", Price3: "1", Price4: "1", Price4: "1", Price5: "1",Price6: "1",Price7: "1",Price8: "1",Price9: "1", Price10: "1"});
+});
+
+app.post('/answer', function (req, res) {
+    res.render("./answer");
 });
 
 app.listen(3000, function () {
