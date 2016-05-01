@@ -9,7 +9,9 @@
   "author": "sokolovmi",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.15.0",
     "ejs-locals": "^1.0.2",
-    "express": "^4.13.4"
+    "express": "^4.13.4",
+    "express-session": "^1.13.0"
   }
 }

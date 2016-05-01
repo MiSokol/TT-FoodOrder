@@ -1,23 +1,81 @@
 var ejs = require('ejs-locals');
 var express = require('express');
 var app = express();
+var bodyParser = require('body-parser');
 
-var pq = require('pg');
+var pg = require('pg');
+var dbUrl = "postgres://postgres:q2w3e4@localhost:5432/postgres";
 
+app.use(bodyParser.urlencoded({ extended: false }));
 app.engine('html', ejs);
 app.engine('ejs', ejs);
 app.set('views', 'views');
 app.set('view engine', 'ejs');
+
+var getData = function (code, callback) {
+    pg.connect(dbUrl, function (err, client, done) {
+        var handleError = function (err) {
+			if(!err) return false;
+			done(client);
+			res.writeHead(500, {'content-type': 'text/plain'});
+			res.end('An error occurred');
+			return true;
+		};
+        
+        var qstring = "SELECT * FROM students WHERE code='" + code + "'";
+        var query = client.query(qstring);
+        var cnt = 0;
+        
+        query.on('row', function (row, result) {
+            result.addRow(row); 
+        });
+        
+        query.on('end', function(result) {
+            callback(result); 
+        });
+        done();
+    });
+};
+
+var addOrder = function(order, callback) {
+	pg.connect(db_url, function(err, client, done) {
+		var qstring = "INSERT INTO " + students + " values('" + 8 + "," + "NoPasaRun" + "," +  +  "," +  "');",
+			query = client.query(qstring);
+		
+		query.on('row', function (row, result) {
+			result.addRow(row);
+		});
+		
+		query.on('end', function(result) {
+			callback();
+		});
+		done();
+	});
+};
 
 app.get('/*', function (req, res) {
   res.render("./startPage");
 });
 
 app.post('/main', function (req, res) {
-  res.render("./main", {Name: "Эрнесто Че Гевара", OrderForDates: "25.04 - 30.04", DeadlineOfOrder: "23.04", Price1: "1", Price2: "1", Price3: "1", Price4: "1", Price4: "1", Price5: "1",Price6: "1",Price7: "1",Price8: "1",Price9: "1", Price10: "1"});
+    var code = req.body.login;
+    if (code == undefined) {
+        code = 'NoPasaRun';
+    }
+    console.log("User with code: " + req.body.login + " try to log in.");
+    
+    getData(code, function (query) {
+        var person = query.rows;
+        if (person.length != 0){
+            //res.cookie('nameCode', person[0].login);
+            console.log("User with name:" + person[0].studentname + "has came in.");
+            res.render("./main", {Name: person[0].studentname, OrderForDates: "25.04 - 30.04", DeadlineOfOrder: "23.04", Price1: "1", Price2: "1", Price3: "1", Price4: "1", Price4: "1", Price5: "1",Price6: "1",Price7: "1",Price8: "1",Price9: "1", Price10: "1"});
+        }
+    });        
 });
 
 app.post('/answer', function (req, res) {
+    console.log(req.body.s);
     res.render("./answer");
 });
 
