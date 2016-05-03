@@ -17,46 +17,7 @@ app.engine('ejs', ejs);
 app.set('views', 'views');
 app.set('view engine', 'ejs');
 
-var getData = function (code, callback) {
-    pg.connect(dbUrl, function (err, client, done) {
-        var handleError = function (err) {
-			if(!err) return false;
-			done(client);
-			res.writeHead(500, {'content-type': 'text/plain'});
-			res.end('An error occurred');
-			return true;
-		};
-        
-        var qstring = "SELECT * FROM students WHERE code='" + code + "'";
-        var query = client.query(qstring);
-        var cnt = 0;
-        
-        query.on('row', function (row, result) {
-            result.addRow(row); 
-        });
-        
-        query.on('end', function(result) {
-            callback(result); 
-        });
-        done();
-    });
-};
-
-var addOrder = function(order, callback) {
-	pg.connect(db_url, function(err, client, done) {
-		var qstring = "INSERT INTO " + students + " values('" + 8 + "," + "NoPasaRun" + "," +  +  "," +  "');",
-			query = client.query(qstring);
-		
-		query.on('row', function (row, result) {
-			result.addRow(row);
-		});
-		
-		query.on('end', function(result) {
-			callback();
-		});
-		done();
-	});
-};
+var db = require('./dbconnect');
 
 app.get('/*', function (req, res) {
   res.render("./startPage");
@@ -68,7 +29,7 @@ app.post('/main', function (req, res) {
         code = req.session.nameCode;
     }
     console.log("User with code: " + code + " try to log in.");
-    getData(code, function (query) {
+    db.dbget(code, function (query) {
         var person = query.rows;
         if (person.length != 0){
             req.session.nameCode = person[0].code;
