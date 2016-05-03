@@ -1,4 +1,7 @@
-export.dbget = function (code, callback) {
+var pg = require('pg');
+var dbUrl = "postgres://postgres:q2w3e4@localhost:5432/postgres";
+
+exports.dbget = function (code, callback) {
     pg.connect(dbUrl, function (err, client, done) {
         var handleError = function (err) {
             if(!err) return false;
@@ -23,6 +26,6 @@ export.dbget = function (code, callback) {
     });
 }
 
-export.dbput = function () {
+exports.dbput = function () {
     
 }

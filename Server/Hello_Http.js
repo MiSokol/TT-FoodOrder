@@ -3,8 +3,6 @@ var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
 var session = require('express-session');
-var pg = require('pg');
-var dbUrl = "postgres://postgres:q2w3e4@localhost:5432/postgres";
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(session({
