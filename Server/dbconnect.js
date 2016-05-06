@@ -26,6 +26,18 @@ exports.dbget = function (code, callback) {
     });
 }
 
-exports.dbput = function () {
-    
+exports.dbput = function (num, code, callback) {
+    pg.connect(dbUrl, function(err, client, done) {
+        var qstring = "UPDATE students SET packnum = " + num + " WHERE code = '" + code + "'"; 
+        var query = client.query(qstring);
+		
+		query.on('row', function (row, result) {
+			result.addRow(row);
+		});
+		
+		query.on('end', function(result) {
+			callback();
+		});
+		done();
+    });
 }

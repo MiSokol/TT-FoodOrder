@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
    <head>
       <link href="jumbotron-narrow.css" rel="stylesheet">
@@ -12,16 +12,16 @@
          <nav>
             <ul class="nav nav-pills pull-right">
                <li role="presentation" class="active">
-                  <a href="#">Главная</a>
+                   <a href="#">Главная</a>
                </li>
                <li role="presentation">
-                  <a href="#">Справка</a>
+                    <a href="#">Справка</a>
                </li>
                <li role="presentation">
-                  <a href="#">Контакты</a>
+                   <a href="#">Контакты</a>
                </li>
                <li role="presentation">
-                  <a href="#">Выход</a>
+                   <a href = "#">Выход</a>
                </li>
             </ul>
          </nav>
@@ -33,123 +33,130 @@
          <h4><%= DeadlineOfOrder %></h4>
       </div>
       <div class=" container" style="width: 760px;" >
-         <div class="header" style="width: 760px;" >
-            <nav>
-               <ul class="nav nav-pills ">
-                  <li role="presentation" >
-                     <a href="#">Понедельник</a>
-                  </li>
-                  <li role="presentation"class="active">
-                     <a href="#">Вторник</a>
-                  </li>
-                  <li role="presentation">
-                     <a href="#">Среда</a>
-                  </li>
-                  <li role="presentation">
-                     <a href="#">Четверг</a>
-                  </li>
-                  <li role="presentation">
-                     <a href="#">Пятница</a>
-                  </li>
-                  <li role="presentation">
-                     <a href="#">Суббота</a>
-                  </li>
-               </ul>
-            </nav>
-         </div>
-         <table class="table table-striped" style="width: 760px;">
-            <thead>
-               <tr>
-                  <th>Номер пакета</th>
-                  <th>Состав пакета</th>
-                  <th>Цена пакета&nbsp&nbsp&nbsp&nbsp&nbsp</th>
-                  <th style="width: 100px;">Выбрать</th>
-               </tr>
-            </thead>
-            <tbody>
-               <tr>
-                  <td>Пакет 1</td>
-                  <td>Завтрак, второй завтрак, обед, полдник и ужин</td>
-                  <td><%= Price1 %></td>
-                  <td>
-                     <div class=&nbsp"radio"> <input value="choose1" name="choose" type="radio" form="mainform">  </div>
-                  </td>
-               </tr>
-               <tr>
-                  <td>Пакет 2</td>
-                  <td>Завтрак</td>
-                  <td><%= Price2 %></td>
-                  <td>
-                     <div class=&nbsp"radio"> <input value="choose2" name="choose" type="radio" form="mainform">  </div>
-                  </td>
-               </tr>
-               <tr>
-                  <td>Пакет 3</td>
-                  <td>Ужин</td>
-                  <td><%= Price3 %></td>
-                  <td>
-                     <div class=&nbsp"radio"> <input value="choose3" name="choose" type="radio" form="mainform">  </div>
-                  </td>
-               </tr>
-               <td>Пакет 4</td>
-               <td>Второй завтрак, обед, полдник, ужин</td>
-               <td><%= Price4 %></td>
-               <td>
-                  <div class=&nbsp"radio"> <input name="choose" value="choose4" type="radio" form="mainform">  </div>
-               </td>
-               </tr>
-               <td>Пакет 5</td>
-               <td>Второй завтрак, обед, полдник </td>
-               <td><%= Price5 %></td>
-               <td>
-                  <div class=&nbsp"radio"> <input value="choose5" name="choose" type="radio" form="mainform"> </div>
-               </td>
-               </tr>
-               <td>Пакет 6</td>
-               <td>Второй завтрак, обед</td>
-               <td><%= Price6 %></td>
-               <td>
-                  <div class=&nbsp"radio"> <input value="choose6" name="choose" type="radio" form="mainform">  </div>
-               </td>
-               </tr>
-               <td>Пакет 7</td>
-               <td>Второй завтрак</td>
-               <td><%= Price7 %></td>
-               <td>
-                  <div class=&nbsp"radio"> <input value="choose7" name="choose" type="radio" form="mainform">  </div>
-               </td>
-               </tr>
-               <td>Пакет 8</td>
-               <td>Обед</td>
-               <td><%= Price8 %></td>
-               <td>
-                  <div class=&nbsp"radio"> <input value="choose8" name="choose" type="radio" form="mainform">  </div>
-               </td>
-               </tr>
-               <td>Пакет 9</td>
-               <td>Обед</td>
-               <td><%= Price9 %></td>
-               <td>
-                  <div class=&nbsp"radio"> <input value="choose9" name="choose" type="radio" form="mainform">  </div>
-               </td>
-               </tr>
-               <td>Пакет 10</td>
-               <td>Полдник</td>
-               <td><%= Price10 %></td>
-               <td>
-                  <div class=&nbsp"radio"> <input value="choose10" name="choose" type="radio" form="mainform">  </div>
-               </td>
-               </tr>
-            </tbody>
-         </table>
-         <footer class="footer">
-             <form id="mainform" action="answer" method="post">
-                <input type="submit" class="btn btn-lg btn-success" href="#" role="button"></input>
-             </form>
-         </footer>
-         <p>&copy; 19.03.2016, Inc.</p>
-      </div>
-      <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-      <!-- /container -->
-   </body>
+            <div class="header" style="width: 760px;" >
+                <nav>
+                    <ul class="nav nav-pills ">
+                        <li role="presentation" >
+                            <a href="#">Понедельник</a>
+                        </li>
+                        <li role="presentation"class="active">
+                            <a href="#">Вторник</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#">Среда</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#">Четверг</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#">Пятница</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#">Суббота</a>
+                        </li>
+                    </ul>
+                </nav>
+          </div>
+          <table class="table table-striped" style="width: 760px;">
+              <thead>
+                  <tr>
+                    <th>Номер пакета</th>
+                      <th>Состав пакета</th>
+                      <th>Цена пакета&nbsp&nbsp&nbsp&nbsp&nbsp</th>
+                      <th style="width: 100px;">Выбрать</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>Пакет 1</td>
+                      <td>Завтрак, второй завтрак, обед, полдник и ужин</td>
+                      <td><%= Price1 %></td>
+                      <td>
+                          <div class=&nbsp"radio"> <input value="1" name="choose" type="radio" form="mainform">  </div>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>Пакет 2</td>
+                      <td>Завтрак</td>
+                      <td><%= Price2 %></td>
+                      <td>
+                          <div class=&nbsp"radio"> <input value="2" name="choose" type="radio" form="mainform">  </div>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>Пакет 3</td>
+                      <td>Ужин</td>
+                      <td><%= Price3 %></td>
+                      <td>
+                          <div class=&nbsp"radio"> <input value="3" name="choose" type="radio" form="mainform">  </div>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>Пакет 4</td>
+                      <td>Второй завтрак, обед, полдник, ужин</td>
+                      <td><%= Price4 %></td>
+                      <td>
+                          <div class=&nbsp"radio"> <input name="choose" value="4" type="radio" form="mainform">  </div>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>Пакет 5</td>
+                      <td>Второй завтрак, обед, полдник </td>
+                      <td><%= Price5 %></td>
+                      <td>
+                          <div class=&nbsp"radio"> <input value="5" name="choose" type="radio" form="mainform"> </div>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>Пакет 6</td>
+                      <td>Второй завтрак, обед</td>
+                      <td><%= Price6 %></td>
+                      <td>
+                          <div class=&nbsp"radio"> <input value="6" name="choose" type="radio" form="mainform">  </div>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>Пакет 7</td>
+                      <td>Второй завтрак</td>
+                      <td><%= Price7 %></td>
+                      <td>
+                          <div class=&nbsp"radio"> <input value="7" name="choose" type="radio" form="mainform">  </div>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>Пакет 8</td>
+                      <td>Обед</td>
+                      <td><%= Price8 %></td>
+                      <td>
+                          <div class=&nbsp"radio"> <input value="8" name="choose" type="radio" form="mainform">  </div>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>Пакет 9</td>
+                      <td>Обед</td>
+                      <td><%= Price9 %></td>
+                      <td>
+                          <div class=&nbsp"radio"> <input value="9" name="choose" type="radio" form="mainform">  </div>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>Пакет 10</td>
+                      <td>Полдник</td>
+                      <td><%= Price10 %></td>
+                      <td>
+                          <div class=&nbsp"radio"> <input value="10" name="choose" type="radio" form="mainform">  </div>
+                      </td>
+                  </tr>
+                </tbody>
+            </table>
+          <footer class="footer">
+              <form id="mainform" action="answer" method="post">
+                  <input type="submit" class="btn btn-lg btn-success" href="#" role="button">
+              </form>
+          </footer>
+          <p>&copy; 19.03.2016, Inc.</p>
+          </div>
+          <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+       </div>
+    </body>
 </html>
