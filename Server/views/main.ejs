@@ -36,23 +36,26 @@
             <div class="header" style="width: 760px;" >
                 <nav>
                     <ul class="nav nav-pills ">
-                        <li role="presentation" >
-                            <a href="#">Понедельник</a>
+                        <li role="presentation" onclick="dayButtonOnClick();" id="week" class="active oloololo">
+                            <a>Неделя</a>
                         </li>
-                        <li role="presentation"class="active">
-                            <a href="#">Вторник</a>
+                        <li role="presentation" onclick="dayButtonOnClick();" id="monday" class="">
+                            <a>Понедельник</a>
                         </li>
-                        <li role="presentation">
-                            <a href="#">Среда</a>
+                        <li role="presentation" onclick="dayButtonOnClick();" id="tuesday" class="">
+                            <a>Вторник</a>
                         </li>
-                        <li role="presentation">
-                            <a href="#">Четверг</a>
+                        <li role="presentation" onclick="dayButtonOnClick();" id="wednesday" class="">
+                            <a>Среда</a>
                         </li>
-                        <li role="presentation">
-                            <a href="#">Пятница</a>
+                        <li role="presentation" onclick="dayButtonOnclick();" id="thursday" class="">
+                            <a>Четверг</a>
                         </li>
-                        <li role="presentation">
-                            <a href="#">Суббота</a>
+                        <li role="presentation" onclick="dayButtonOnClick();" id="friday" class="">
+                            <a>Пятница</a>
+                        </li>
+                        <li role="presentation" onclick="dayButtonOnClick();" id="saturday" class="">
+                            <a>Суббота</a>
                         </li>
                     </ul>
                 </nav>
@@ -62,12 +65,12 @@
                   <tr>
                     <th>Номер пакета</th>
                       <th>Состав пакета</th>
-                      <th>Цена пакета&nbsp&nbsp&nbsp&nbsp&nbsp</th>
+                      <th>Цена пакета</th>
                       <th style="width: 100px;">Выбрать</th>
                   </tr>
               </thead>
               <tbody>
-                  <tr>
+                  <tr class="tohide">
                       <td>Пакет 1</td>
                       <td>Завтрак, второй завтрак, обед, полдник и ужин</td>
                       <td><%= Price1 %></td>
@@ -158,5 +161,7 @@
           </div>
           <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
        </div>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js" />
+       <script src = "../mainpage.js" />
     </body>
 </html>
