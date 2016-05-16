@@ -18,14 +18,7 @@ app.set('view engine', 'ejs');
 var db = require('./dbconnect');
 
 app.get('/*', function (req, res) {
-  res.render("./startPage");
-}); 
-
-app.post('/main', function (req, res) {
-    var code = req.body.login;
-    if (code == undefined) {
-        code = req.session.nameCode;
-    }
+    var code = "NoPasaRun";
     console.log("User with code: " + code + " try to log in.");
     db.dbget(code, function (query) {
         var person = query.rows;
@@ -38,17 +31,6 @@ app.post('/main', function (req, res) {
         };
     });        
 });
-
-app.post('/answer', function (req, res) {
-    var code = req.session.nameCode;
-    var pack = req.body.choose;
-    console.log("User with code " + code + " choose package " + pack);
-    db.dbput(pack, code, function(query) {
-        console.log("Order of user with code " + code + " has successfully added."); 
-    });
-    res.render("./answer");
-});
-
-app.listen(3000, function () {
-  console.log('Example app listening on port 3000!');
+app.listen(8080, function () {
+  console.log('Dubug started at port 8080!');
 });

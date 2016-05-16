@@ -7,6 +7,7 @@
       <title>Заказ питания ученикам "Интеллектуала" - Главная</title>
    </head>
    <body>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
       <div class=" container" style="width: 760px;">
       <div class="header" style="width: 760px;">
          <nav>
@@ -36,25 +37,25 @@
             <div class="header" style="width: 760px;" >
                 <nav>
                     <ul class="nav nav-pills ">
-                        <li role="presentation" onclick="dayButtonOnClick();" id="week" class="active oloololo">
+                        <li role="presentation" id="allWeek" class="active">
                             <a>Неделя</a>
                         </li>
-                        <li role="presentation" onclick="dayButtonOnClick();" id="monday" class="">
+                        <li role="presentation" id="monday">
                             <a>Понедельник</a>
                         </li>
-                        <li role="presentation" onclick="dayButtonOnClick();" id="tuesday" class="">
+                        <li role="presentation" id="tuesday">
                             <a>Вторник</a>
                         </li>
-                        <li role="presentation" onclick="dayButtonOnClick();" id="wednesday" class="">
+                        <li role="presentation" id="wednesday">
                             <a>Среда</a>
                         </li>
-                        <li role="presentation" onclick="dayButtonOnclick();" id="thursday" class="">
+                        <li role="presentation" id="thursday">
                             <a>Четверг</a>
                         </li>
-                        <li role="presentation" onclick="dayButtonOnClick();" id="friday" class="">
+                        <li role="presentation" id="friday">
                             <a>Пятница</a>
                         </li>
-                        <li role="presentation" onclick="dayButtonOnClick();" id="saturday" class="">
+                        <li role="presentation" id="saturday">
                             <a>Суббота</a>
                         </li>
                     </ul>
@@ -70,7 +71,7 @@
                   </tr>
               </thead>
               <tbody>
-                  <tr class="tohide">
+                  <tr class="monday">
                       <td>Пакет 1</td>
                       <td>Завтрак, второй завтрак, обед, полдник и ужин</td>
                       <td><%= Price1 %></td>
@@ -161,7 +162,14 @@
           </div>
           <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
        </div>
-       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js" />
-       <script src = "../mainpage.js" />
-    </body>
+       <!--<script src = "../mainpage.js" />-->
+	   <script>
+		   $("li").click(function() {
+			   $( "*" ).removeClass( "active" );
+			   $( "tr" )
+			   $( this ).addClass( "active" );
+			   alert(this.id);
+		   });
+	   </script>
+	</body>
 </html>

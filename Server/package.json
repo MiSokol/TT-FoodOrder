@@ -12,6 +12,7 @@
     "body-parser": "^1.15.0",
     "ejs-locals": "^1.0.2",
     "express": "^4.13.4",
-    "express-session": "^1.13.0"
+    "express-session": "^1.13.0",
+    "path": "^0.12.7"
   }
 }
