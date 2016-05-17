@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <link href="jumbotron.css" rel="stylesheet">
+      <link href="http://bootstrap-3.ru/dist/css/bootstrap.min.css" rel="stylesheet">
+      <meta charset="utf-8">
+      <title>Заказ питания ученикам "Интеллектуала" </title>
+   </head>
+   <body>
+      <div class=" container" style="width: 760px;">
+      <div class="header" style="width: 760px;">
+         
+         <h3 class="text-muted" style="width: 760px;">Заказ на неделю </h3>
+         <hr>
+         <br>
+         <h5><%= Name %></h5>
+         
+         <h4><%= OrderForDates %></h4>
+         <h4><%= DeadlineOfOrder %></h4>
+         <table class="table table-striped" style="width: 760px;">
+            <thead>
+               <tr>
+                  <th>День</th>
+                  <th>Номер пакета</th>
+                  <th>Цена пакета&nbsp&nbsp&nbsp&nbsp&nbsp</th>
+                  
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td>Понедельник</td>
+                  <td><%=orderm%></td>
+                  <td><%= Pricem %></td>
+               </tr>
+               <tr>
+                  <td>Вторник</td>
+                  <td><%=ordertu%></td>
+                  <td><%= Pricetu %></td>
+               </tr>
+               <tr>
+                  <td>Среда</td>
+                  <td><%=orderw%></td>
+                  <td><%= Pricew %></td>
+               </tr>
+               <tr>
+                  <td>Четверг</td>
+                  <td><%=orderth%></td>
+                  <td><%= Priceth %></td>
+               </tr>
+               <tr>
+                  <td>Пятница</td>
+                  <td><%=orderf%></td>
+                  <td><%= Pricef %></td>
+               </tr>
+               <tr>
+                  <td>Суббота</td>
+                  <td><%=orders%></td>
+                  <td><%= Prices %></td>
+               </tr>
+               <tr>
+                  <td>Итог</td>
+                  <td><%= Price %></td>
+                  
+               </tr>
+               
+            </tbody>
+         </table>
+         <h6 style="color:red">Вы <%=state %>можете изменить заказ.</h6>
+         <button class="btn btn-lg btn-primary btn-block" type="submit">Назад</button>
+         
+      </div>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+      <!-- /container -->
+   </body>
+</html>

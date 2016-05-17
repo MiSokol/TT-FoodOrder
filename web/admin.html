@@ -1,0 +1,113 @@
+<html>
+   <head>
+      <link href="jumbotron-narrow.css" rel="stylesheet">
+      <link href="http:/bootstrap-3.ru/dist/css/bootstrap.min.css" rel="stylesheet">
+      <meta charset="utf-8">
+      <title>Заказ питания ученикам "Интеллектуала" - Главная</title>
+   </head>
+   <body>
+      <div class=" container" style="width: 830px;">
+      <div class="header" style="width: 830px;">
+         <nav>
+            <ul class="nav nav-pills pull-right">
+               <li role="presentation">
+                  <a href="#">Выход</a>
+               </li>
+            </ul>
+         </nav>
+         <h3 class="text-muted" style="width: 830px;">Заказ пакетов питания </h3>
+         <hr>
+         <br>
+         <h5>Страница администратора</h5>
+      </div>
+      <div class=" container" style="width: 830px; padding: 0px" >
+         <div class="header" style="width: 830px; padding: 0px" >
+            <nav>
+               <ul class="nav nav-pills pull-right">
+                  <li role="presentation"; >
+                    <a href="#">Предыдущая неделя</a>
+                  </li>
+                  <li >
+                  	<h4><%= date %></h4>
+                  </li>
+                  <li role="presentation";>
+                    <a href="#">Следующая неделя</a>
+                  </li>
+               </ul>
+            </nav>
+         </div>
+        <table class="table table-striped" style="width: 830px;">
+            <thead>
+            <tr>
+                <th>Ученик</th>
+            	<th>Понедельник </th>
+            	<th>Вторник</th>
+            	<th>Среда</th>
+            	<th>Четверг</th>
+            	<th>Пятница</th>
+            	<th>Суббота</th>
+            	<th>Итог</th>
+            </tr>	
+            </thead>
+            <tbody>
+            	<tr>
+            		<td><%=name001%></td>
+            		<td><%= p001m %></td>
+            		<td><%=p001tu %></td>
+            		<td><%=p001w %></td>
+            		<td><%=p001th %></td>
+            		<td><%=p001f %></td>
+            		<td><%=p001s %></td>
+            		<td><%=all001 %></td>
+            	</tr><tr>
+            		<td><%=name002%></td>
+            		<td><%=p002m %></td>
+            		<td><%=p002tu %></td>
+            		<td><%=p002w %></td>
+            		<td><%=p002th %></td>
+            		<td><%=p002f %></td>
+            		<td><%=p002s %></td>
+            		<td><%=all002 %></td>
+            	</tr><tr>
+            		<td><%=name003%></td>
+            		<td><%=p003m %></td>
+            		<td><%=p003tu %></td>
+            		<td><%=p003w %></td>
+            		<td><%=p003th %></td>
+            		<td><%=p003f %></td>
+            		<td><%=p003s %></td>
+            		<td><%=all003 %></td>
+            	</tr><tr>
+            		<td><%=name004%></td>
+            		<td><%=p004m %></td>
+            		<td><%=p004tu %></td>
+            		<td><%=p004w %></td>
+            		<td><%=p004th %></td>
+            		<td><%=p004f %></td>
+            		<td><%=p004s %></td>
+            		<td><%=all004 %></td>
+            	</tr><tr>
+            		<td><%=name005%></td>
+            		<td><%=p005m %></td>
+            		<td><%=p005tu %></td>
+            		<td><%=p005w %></td>
+            		<td><%=p005th %></td>
+            		<td><%=p005f %></td>
+            		<td><%=p005s %></td>
+            		<td><%=all005 %></td>
+            	</tr><tr>
+            		<td>Итог</td>
+            		<td><%=allpm %></td>
+            		<td><%=allptu %></td>
+            		<td><%=allpw %></td>
+            		<td><%=allpth %></td>
+            		<td><%=allpf %></td>
+            		<td><%=allps %></td>
+            		<td><%=finalprice %></td>
+            	</tr>
+            </tbody>
+            </div>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+      <!-- /container -->
+   </body>
+</html>
