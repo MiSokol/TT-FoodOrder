@@ -70,7 +70,7 @@
           </div>
           <table class="table table-striped" style="width: 760px;">
               <thead>
-                  <tr>
+                  <tr class="tableHeader">
                     <th>Номер пакета</th>
                       <th>Состав пакета</th>
                       <th>Цена пакета</th>
@@ -159,7 +159,7 @@
                       </td>
                   </tr>
 				  <tr class="monday_offer hidden" id="mondayPack1">
-                      <td>Покет Понедельниу1</td>
+                      <td>Пакет 1</td>
                       <td>Завтрак, второй завтрак, обед, полдник и ужин</td>
                       <td><%= Price1 %></td>
                       <td>
@@ -167,7 +167,7 @@
                       </td>
                   </tr>
                   <tr class="monday_offer hidden" id="mondayPack2">
-                      <td>Покет Понедельниу2</td>
+                      <td>Пакет 2</td>
                       <td>Завтрак</td>
                       <td><%= Price2 %></td>
                       <td>
@@ -175,7 +175,7 @@
                       </td>
                   </tr>
                   <tr class="monday_offer hidden" id="mondayPack3">
-                      <td>Покет Понедельниу3</td>
+                      <td>Пакет 3</td>
                       <td>Ужин</td>
                       <td><%= Price3 %></td>
                       <td>
@@ -183,7 +183,7 @@
                       </td>
                   </tr>
                   <tr class="monday_offer hidden" id="mondayPack4">
-                      <td>Покет Понедельниу4</td>
+                      <td>Пакет 4</td>
                       <td>Второй завтрак, обед, полдник, ужин</td>
                       <td><%= Price4 %></td>
                       <td>
@@ -191,7 +191,7 @@
                       </td>
                   </tr>
                   <tr class="monday_offer hidden" id="mondayPack5">
-                      <td>Покет Понедельниу5</td>
+                      <td>Пакет 5</td>
                       <td>Второй завтрак, обед, полдник </td>
                       <td><%= Price5 %></td>
                       <td>
@@ -199,7 +199,7 @@
                       </td>
                   </tr>
                   <tr class="monday_offer hidden" id="mondayPack6">
-                      <td>Покет Понедельниу6</td>
+                      <td>Пакет 6</td>
                       <td>Второй завтрак, обед</td>
                       <td><%= Price6 %></td>
                       <td>
@@ -207,7 +207,7 @@
                       </td>
                   </tr>
                   <tr class="monday_offer hidden" id="mondayPack7">
-                      <td>Покет Понедельниу7</td>
+                      <td>Пакет 7</td>
                       <td>Второй завтрак</td>
                       <td><%= Price7 %></td>
                       <td>
@@ -215,7 +215,7 @@
                       </td>
                   </tr>
                   <tr class="monday_offer hidden" id="mondayPack8">
-                      <td>Покет Понедельниу8</td>
+                      <td>Пакет 8</td>
                       <td>Обед</td>
                       <td><%= Price8 %></td>
                       <td>
@@ -223,7 +223,7 @@
                       </td>
                   </tr>
                   <tr class="monday_offer hidden" id="mondayPack9">
-                      <td>Покет Понедельниу9</td>
+                      <td>Пакет 9</td>
                       <td>Обед</td>
                       <td><%= Price9 %></td>
                       <td>
@@ -231,13 +231,413 @@
                       </td>
                   </tr>
                   <tr class="monday_offer hidden" id="mondayPack10">
-                      <td>Покет Понедельниу10</td>
+                      <td>Пакет 10</td>
                       <td>Полдник</td>
                       <td><%= Price10 %></td>
                       <td>
                           <div class=&nbsp"radio"> <input value="19" name="choose" type="radio" form="mainform">  </div>
                       </td>
                   </tr>
+				  <tr class="tuesday_offer hidden" id="tuesdayPack1">
+                      <td>Пакет 1</td>
+                      <td>Завтрак, второй завтрак, обед, полдник и ужин</td>
+                      <td><%= Price1 %></td>
+                      <td>
+                          <div class=&nbsp"radio"> <input value="20" name="choose" type="radio" form="mainform">  </div>
+                      </td>
+                  </tr>
+                  <tr class="tuesday_offer hidden" id="tuesdayPack2">
+                      <td>Пакет 2</td>
+                      <td>Завтрак</td>
+                      <td><%= Price2 %></td>
+                      <td>
+                          <div class=&nbsp"radio"> <input value="21" name="choose" type="radio" form="mainform">  </div>
+                      </td>
+                  </tr>
+                  <tr class="tuesday_offer hidden" id="tuesdayPack3">
+                      <td>Пакет 3</td>
+                      <td>Ужин</td>
+                      <td><%= Price3 %></td>
+                      <td>
+                          <div class=&nbsp"radio"> <input value="22" name="choose" type="radio" form="mainform">  </div>
+                      </td>
+                  </tr>
+                  <tr class="tuesday_offer hidden" id="tuesdayPack4">
+                      <td>Пакет 4</td>
+                      <td>Второй завтрак, обед, полдник, ужин</td>
+                      <td><%= Price4 %></td>
+                      <td>
+                          <div class=&nbsp"radio"> <input name="choose" value="23" type="radio" form="mainform">  </div>
+                      </td>
+                  </tr>
+                  <tr class="tuesday_offer hidden" id="tuesdayPack5">
+                      <td>Пакет 5</td>
+                      <td>Второй завтрак, обед, полдник </td>
+                      <td><%= Price5 %></td>
+                      <td>
+                          <div class=&nbsp"radio"> <input value="24" name="choose" type="radio" form="mainform"> </div>
+                      </td>
+                  </tr>
+                  <tr class="tuesday_offer hidden" id="tuesdayPack6">
+                      <td>Пакет 6</td>
+                      <td>Второй завтрак, обед</td>
+                      <td><%= Price6 %></td>
+                      <td>
+                          <div class=&nbsp"radio"> <input value="25" name="choose" type="radio" form="mainform">  </div>
+                      </td>
+                  </tr>
+                  <tr class="tuesday_offer hidden" id="tuesdayPack7">
+                      <td>Пакет 7</td>
+                      <td>Второй завтрак</td>
+                      <td><%= Price7 %></td>
+                      <td>
+                          <div class=&nbsp"radio"> <input value="26" name="choose" type="radio" form="mainform">  </div>
+                      </td>
+                  </tr>
+                  <tr class="tuesday_offer hidden" id="tuesdayPack8">
+                      <td>Пакет 8</td>
+                      <td>Обед</td>
+                      <td><%= Price8 %></td>
+                      <td>
+                          <div class=&nbsp"radio"> <input value="27" name="choose" type="radio" form="mainform">  </div>
+                      </td>
+                  </tr>
+                  <tr class="tuesday_offer hidden" id="tuesdayPack9">
+                      <td>Пакет 9</td>
+                      <td>Обед</td>
+                      <td><%= Price9 %></td>
+                      <td>
+                          <div class=&nbsp"radio"> <input value="28" name="choose" type="radio" form="mainform">  </div>
+                      </td>
+                  </tr>
+                  <tr class="tuesday_offer hidden" id="tuesdayPack10">
+                      <td>Пакет 10</td>
+                      <td>Полдник</td>
+                      <td><%= Price10 %></td>
+                      <td>
+                          <div class=&nbsp"radio"> <input value="29" name="choose" type="radio" form="mainform">  </div>
+                      </td>
+                  </tr>
+				  <tr class="wednesday_offer hidden" id="wednesdayPack1">
+                      <td>Пакет 1</td>
+                      <td>Завтрак, второй завтрак, обед, полдник и ужин</td>
+                      <td><%= Price1 %></td>
+                      <td>
+                          <div class=&nbsp"radio"> <input value="30" name="choose" type="radio" form="mainform">  </div>
+                      </td>
+                  </tr>
+                  <tr class="wednesday_offer hidden" id="wednesdayPack2">
+                      <td>Пакет 2</td>
+                      <td>Завтрак</td>
+                      <td><%= Price2 %></td>
+                      <td>
+                          <div class=&nbsp"radio"> <input value="31" name="choose" type="radio" form="mainform">  </div>
+                      </td>
+                  </tr>
+                  <tr class="wednesday_offer hidden" id="wednesdayPack3">
+                      <td>Пакет 3</td>
+                      <td>Ужин</td>
+                      <td><%= Price3 %></td>
+                      <td>
+                          <div class=&nbsp"radio"> <input value="32" name="choose" type="radio" form="mainform">  </div>
+                      </td>
+                  </tr>
+                  <tr class="wednesday_offer hidden" id="wednesdayPack4">
+                      <td>Пакет 4</td>
+                      <td>Второй завтрак, обед, полдник, ужин</td>
+                      <td><%= Price4 %></td>
+                      <td>
+                          <div class=&nbsp"radio"> <input name="choose" value="33" type="radio" form="mainform">  </div>
+                      </td>
+                  </tr>
+                  <tr class="wednesday_offer hidden" id="wednesdayPack5">
+                      <td>Пакет 5</td>
+                      <td>Второй завтрак, обед, полдник </td>
+                      <td><%= Price5 %></td>
+                      <td>
+                          <div class=&nbsp"radio"> <input value="34" name="choose" type="radio" form="mainform"> </div>
+                      </td>
+                  </tr>
+                  <tr class="wednesday_offer hidden" id="wednesdayPack6">
+                      <td>Пакет 6</td>
+                      <td>Второй завтрак, обед</td>
+                      <td><%= Price6 %></td>
+                      <td>
+                          <div class=&nbsp"radio"> <input value="35" name="choose" type="radio" form="mainform">  </div>
+                      </td>
+                  </tr>
+                  <tr class="wednesday_offer hidden" id="wednesdayPack7">
+                      <td>Пакет 7</td>
+                      <td>Второй завтрак</td>
+                      <td><%= Price7 %></td>
+                      <td>
+                          <div class=&nbsp"radio"> <input value="36" name="choose" type="radio" form="mainform">  </div>
+                      </td>
+                  </tr>
+                  <tr class="wednesday_offer hidden" id="wednesdayPack8">
+                      <td>Пакет 8</td>
+                      <td>Обед</td>
+                      <td><%= Price8 %></td>
+                      <td>
+                          <div class=&nbsp"radio"> <input value="37" name="choose" type="radio" form="mainform">  </div>
+                      </td>
+                  </tr>
+                  <tr class="wednesday_offer hidden" id="wednesdayPack9">
+                      <td>Пакет 9</td>
+                      <td>Обед</td>
+                      <td><%= Price9 %></td>
+                      <td>
+                          <div class=&nbsp"radio"> <input value="38" name="choose" type="radio" form="mainform">  </div>
+                      </td>
+                  </tr>
+                  <tr class="wednesday_offer hidden" id="wednesdayPack10">
+                      <td>Пакет 10</td>
+                      <td>Полдник</td>
+                      <td><%= Price10 %></td>
+                      <td>
+                          <div class=&nbsp"radio"> <input value="39" name="choose" type="radio" form="mainform">  </div>
+                      </td>
+                  </tr>
+				  <tr class="thursday_offer hidden" id="thursdayPack1">
+                      <td>Пакет 1</td>
+                      <td>Завтрак, второй завтрак, обед, полдник и ужин</td>
+                      <td><%= Price1 %></td>
+                      <td>
+                          <div class=&nbsp"radio"> <input value="40" name="choose" type="radio" form="mainform">  </div>
+                      </td>
+                  </tr>
+                  <tr class="thursday_offer hidden" id="thursdayPack2">
+                      <td>Пакет 2</td>
+                      <td>Завтрак</td>
+                      <td><%= Price2 %></td>
+                      <td>
+                          <div class=&nbsp"radio"> <input value="41" name="choose" type="radio" form="mainform">  </div>
+                      </td>
+                  </tr>
+                  <tr class="thursday_offer hidden" id="thursdayPack3">
+                      <td>Пакет 3</td>
+                      <td>Ужин</td>
+                      <td><%= Price3 %></td>
+                      <td>
+                          <div class=&nbsp"radio"> <input value="42" name="choose" type="radio" form="mainform">  </div>
+                      </td>
+                  </tr>
+                  <tr class="thursday_offer hidden" id="thursdayPack4">
+                      <td>Пакет 4</td>
+                      <td>Второй завтрак, обед, полдник, ужин</td>
+                      <td><%= Price4 %></td>
+                      <td>
+                          <div class=&nbsp"radio"> <input name="choose" value="43" type="radio" form="mainform">  </div>
+                      </td>
+                  </tr>
+                  <tr class="thursday_offer hidden" id="thursdayPack5">
+                      <td>Пакет 5</td>
+                      <td>Второй завтрак, обед, полдник </td>
+                      <td><%= Price5 %></td>
+                      <td>
+                          <div class=&nbsp"radio"> <input value="44" name="choose" type="radio" form="mainform"> </div>
+                      </td>
+                  </tr>
+                  <tr class="thursday_offer hidden" id="thursdayPack6">
+                      <td>Пакет 6</td>
+                      <td>Второй завтрак, обед</td>
+                      <td><%= Price6 %></td>
+                      <td>
+                          <div class=&nbsp"radio"> <input value="45" name="choose" type="radio" form="mainform">  </div>
+                      </td>
+                  </tr>
+                  <tr class="thursday_offer hidden" id="thursdayPack7">
+                      <td>Пакет 7</td>
+                      <td>Второй завтрак</td>
+                      <td><%= Price7 %></td>
+                      <td>
+                          <div class=&nbsp"radio"> <input value="46" name="choose" type="radio" form="mainform">  </div>
+                      </td>
+                  </tr>
+                  <tr class="thursday_offer hidden" id="thursdayPack8">
+                      <td>Пакет 8</td>
+                      <td>Обед</td>
+                      <td><%= Price8 %></td>
+                      <td>
+                          <div class=&nbsp"radio"> <input value="47" name="choose" type="radio" form="mainform">  </div>
+                      </td>
+                  </tr>
+                  <tr class="thursday_offer hidden" id="thursdayPack9">
+                      <td>Пакет 9</td>
+                      <td>Обед</td>
+                      <td><%= Price9 %></td>
+                      <td>
+                          <div class=&nbsp"radio"> <input value="48" name="choose" type="radio" form="mainform">  </div>
+                      </td>
+                  </tr>
+                  <tr class="thursday_offer hidden" id="thursdayPack10">
+                      <td>Пакет 10</td>
+                      <td>Полдник</td>
+                      <td><%= Price10 %></td>
+                      <td>
+                          <div class=&nbsp"radio"> <input value="49" name="choose" type="radio" form="mainform">  </div>
+                      </td>
+                  </tr>
+				  <tr class="friday_offer hidden" id="fridayPack1">
+                      <td>Пакет 1</td>
+                      <td>Завтрак, второй завтрак, обед, полдник и ужин</td>
+                      <td><%= Price1 %></td>
+                      <td>
+                          <div class=&nbsp"radio"> <input value="50" name="choose" type="radio" form="mainform">  </div>
+                      </td>
+                  </tr>
+                  <tr class="friday_offer hidden" id="fridayPack2">
+                      <td>Пакет 2</td>
+                      <td>Завтрак</td>
+                      <td><%= Price2 %></td>
+                      <td>
+                          <div class=&nbsp"radio"> <input value="51" name="choose" type="radio" form="mainform">  </div>
+                      </td>
+                  </tr>
+                  <tr class="friday_offer hidden" id="fridayPack3">
+                      <td>Пакет 3</td>
+                      <td>Ужин</td>
+                      <td><%= Price3 %></td>
+                      <td>
+                          <div class=&nbsp"radio"> <input value="52" name="choose" type="radio" form="mainform">  </div>
+                      </td>
+                  </tr>
+                  <tr class="friday_offer hidden" id="fridayPack4">
+                      <td>Пакет 4</td>
+                      <td>Второй завтрак, обед, полдник, ужин</td>
+                      <td><%= Price4 %></td>
+                      <td>
+                          <div class=&nbsp"radio"> <input name="choose" value="53" type="radio" form="mainform">  </div>
+                      </td>
+                  </tr>
+                  <tr class="friday_offer hidden" id="fridayPack5">
+                      <td>Пакет 5</td>
+                      <td>Второй завтрак, обед, полдник </td>
+                      <td><%= Price5 %></td>
+                      <td>
+                          <div class=&nbsp"radio"> <input value="54" name="choose" type="radio" form="mainform"> </div>
+                      </td>
+                  </tr>
+                  <tr class="friday_offer hidden" id="fridayPack6">
+                      <td>Пакет 6</td>
+                      <td>Второй завтрак, обед</td>
+                      <td><%= Price6 %></td>
+                      <td>
+                          <div class=&nbsp"radio"> <input value="55" name="choose" type="radio" form="mainform">  </div>
+                      </td>
+                  </tr>
+                  <tr class="friday_offer hidden" id="fridayPack7">
+                      <td>Пакет 7</td>
+                      <td>Второй завтрак</td>
+                      <td><%= Price7 %></td>
+                      <td>
+                          <div class=&nbsp"radio"> <input value="56" name="choose" type="radio" form="mainform">  </div>
+                      </td>
+                  </tr>
+                  <tr class="friday_offer hidden" id="fridayPack8">
+                      <td>Пакет 8</td>
+                      <td>Обед</td>
+                      <td><%= Price8 %></td>
+                      <td>
+                          <div class=&nbsp"radio"> <input value="57" name="choose" type="radio" form="mainform">  </div>
+                      </td>
+                  </tr>
+                  <tr class="friday_offer hidden" id="fridayPack9">
+                      <td>Пакет 9</td>
+                      <td>Обед</td>
+                      <td><%= Price9 %></td>
+                      <td>
+                          <div class=&nbsp"radio"> <input value="58" name="choose" type="radio" form="mainform">  </div>
+                      </td>
+                  </tr>
+                  <tr class="friday_offer hidden" id="fridayPack10">
+                      <td>Пакет 10</td>
+                      <td>Полдник</td>
+                      <td><%= Price10 %></td>
+                      <td>
+                          <div class=&nbsp"radio"> <input value="59" name="choose" type="radio" form="mainform">  </div>
+                      </td>
+                  </tr>
+				  <!--<tr class="saturday_offer hidden" id="saturdayPack1">
+                      <td>Пакет 1</td>
+                      <td>Завтрак, второй завтрак, обед, полдник и ужин</td>
+                      <td><%= Price1 %></td>
+                      <td>
+                          <div class=&nbsp"radio"> <input value="60" name="choose" type="radio" form="mainform">  </div>
+                      </td>
+                  </tr>-->
+                  <tr class="saturday_offer hidden" id="saturdayPack2">
+                      <td>Пакет 2</td>
+                      <td>Завтрак</td>
+                      <td><%= Price2 %></td>
+                      <td>
+                          <div class=&nbsp"radio"> <input value="61" name="choose" type="radio" form="mainform">  </div>
+                      </td>
+                  </tr>
+                  <!--<tr class="saturday_offer hidden" id="saturdayPack3">
+                      <td>Пакет 3</td>
+                      <td>Ужин</td>
+                      <td><%= Price3 %></td>
+                      <td>
+                          <div class=&nbsp"radio"> <input value="62" name="choose" type="radio" form="mainform">  </div>
+                      </td>
+                  </tr>
+                  <tr class="saturday_offer hidden" id="saturdayPack4">
+                      <td>Пакет 4</td>
+                      <td>Второй завтрак, обед, полдник, ужин</td>
+                      <td><%= Price4 %></td>
+                      <td>
+                          <div class=&nbsp"radio"> <input name="choose" value="63" type="radio" form="mainform">  </div>
+                      </td>
+                  </tr>
+                  <tr class="saturday_offer hidden" id="saturdayPack5">
+                      <td>Пакет 5</td>
+                      <td>Второй завтрак, обед, полдник </td>
+                      <td><%= Price5 %></td>
+                      <td>
+                          <div class=&nbsp"radio"> <input value="64" name="choose" type="radio" form="mainform"> </div>
+                      </td>
+                  </tr>-->
+                  <tr class="saturday_offer hidden" id="saturdayPack6">
+                      <td>Пакет 6</td>
+                      <td>Второй завтрак, обед</td>
+                      <td><%= Price6 %></td>
+                      <td>
+                          <div class=&nbsp"radio"> <input value="65" name="choose" type="radio" form="mainform">  </div>
+                      </td>
+                  </tr>
+                  <tr class="saturday_offer hidden" id="saturdayPack7">
+                      <td>Пакет 7</td>
+                      <td>Второй завтрак</td>
+                      <td><%= Price7 %></td>
+                      <td>
+                          <div class=&nbsp"radio"> <input value="66" name="choose" type="radio" form="mainform">  </div>
+                      </td>
+                  </tr>
+                  <tr class="saturday_offer hidden" id="saturdayPack8">
+                      <td>Пакет 8</td>
+                      <td>Обед</td>
+                      <td><%= Price8 %></td>
+                      <td>
+                          <div class=&nbsp"radio"> <input value="67" name="choose" type="radio" form="mainform">  </div>
+                      </td>
+                  </tr>
+                  <tr class="saturday_offer hidden" id="saturdayPack9">
+                      <td>Пакет 9</td>
+                      <td>Обед</td>
+                      <td><%= Price9 %></td>
+                      <td>
+                          <div class=&nbsp"radio"> <input value="68" name="choose" type="radio" form="mainform">  </div>
+                      </td>
+                  </tr>
+                  <!--<tr class="saturday_offer hidden" id="saturdayPack10">
+                      <td>Пакет 10</td>
+                      <td>Полдник</td>
+                      <td><%= Price10 %></td>
+                      <td>
+                          <div class=&nbsp"radio"> <input value="69" name="choose" type="radio" form="mainform">  </div>
+                      </td>
+                  </tr>-->
                 </tbody>
             </table>
           <footer class="footer">
@@ -254,10 +654,11 @@
 		   $("li").click(function() {
 				$( ".menu" ).removeClass( "active" );
 				$( this ).addClass( "active" );
-			   	alert(this.id);
+			   	//alert(this.id);
   
 			   	$("tr").addClass("hidden");
 			   	$("." + this.id + "_offer").removeClass("hidden");
+			   	$(".tableHeader").removeClass("hidden");
 		   });
 	   </script>
 	</body>
