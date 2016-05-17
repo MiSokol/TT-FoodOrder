@@ -34,7 +34,7 @@ app.post('/main', function (req, res) {
         if (person.length != 0){
             req.session.nameCode = person[0].code;
             console.log("User with name: " + person[0].studentname + "has came in.");
-            res.render("./main", {Name: person[0].studentname, OrderForDates: "25.04 - 30.04", DeadlineOfOrder: "23.04", Price1: "1", Price2: "1", Price3: "1", Price4: "1", Price4: "1", Price5: "1", Price6: "1", Price7: "1", Price8: "1", Price9: "1", Price10: "1"});
+            res.render("./main", {Name: person[0].studentname, OrderForDates: "25.04 - 30.04", DeadlineOfOrder: "23.04", Price1: "1", Price2: "1", Price3: "1", Price4: 1, Price4: "1", Price5: "1", Price6: "1", Price7: "1", Price8: "1", Price9: "1", Price10: "1"});
         } else {
             //prompt("Wrong password! Try another one...");
         };
