@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <link href="jumbotron.css" rel="stylesheet">
+      <link href="http://bootstrap-3.ru/dist/css/bootstrap.min.css" rel="stylesheet">
+      <meta charset="utf-8">
+      <title>Заказ питания ученикам "Интеллектуала" </title>
+   </head>
+   <body>
+      <div class=" container" style="width: 760px;">
+      <div class="header" style="width: 760px;">
+         
+         <h3 class="text-muted" style="width: 760px;">Заказ на неделю </h3>
+         <hr>
+         <br>
+         <h5><%= Name %></h5>
+         
+         <h4><%= OrderForDates %></h4>
+         <h4><%= DeadlineOfOrder %></h4>
+         <table class="table table-striped" style="width: 760px;">
+            <thead>
+               <tr>
+                  <th>День</th>
+                  <th>Номер пакета</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td>Понедельник</td>
+                  <td><%=monday_order%></td>
+               </tr>
+               <tr>
+                  <td>Вторник</td>
+				   <td><%=tuesday_order%></td>
+               </tr>
+               <tr>
+                  <td>Среда</td>
+                  <td><%=wednesday_order%></td>
+               </tr>
+               <tr>
+                  <td>Четверг</td>
+                  <td><%=thursday_order%></td>
+               </tr>
+               <tr>
+                  <td>Пятница</td>
+                  <td><%=friday_order%></td>
+               </tr>
+               <tr>
+                  <td>Суббота</td>
+                  <td><%=saturday_order%></td>
+               </tr>               
+            </tbody>
+         </table>
+		 <form method="post" action="main" >
+         	<button class="btn btn-lg btn-primary btn-block" type="submit">Назад</button>
+         </form>
+      </div>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+      <!-- /container -->
+   </body>
+</html>

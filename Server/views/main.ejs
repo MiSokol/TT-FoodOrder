@@ -22,15 +22,15 @@
                <li role="presentation" class="active">
                    <a href="#">Главная</a>
                </li>
-               <li role="presentation">
+               <!--<li role="presentation">
                     <a href="#">Справка</a>
-               </li>
+               </li>-->
                <li role="presentation">
                    <a href="#">Контакты</a>
                </li>
                <li role="presentation">
-                   <a href = "#">Выход</a>
-               </li>
+                   <a href = "">Выход</a>
+				</li>
             </ul>
          </nav>
          <h3 class="text-muted" style="width: 760px;">Заказ пакетов питания </h3>
@@ -68,7 +68,10 @@
                     </ul>
                 </nav>
           </div>
-          <table class="table table-striped" style="width: 760px;">
+		  <form method="post" action="history"> 
+			  <button>История заказов</button>
+          </form>
+		  <table class="table table-striped" style="width: 760px;">
               <thead>
                   <tr class="tableHeader">
                     <th>Номер пакета</th>
@@ -645,7 +648,7 @@
                   <input type="submit" class="btn btn-lg btn-success" href="#" role="button">
               </form>
           </footer>
-          <p>&copy; 19.03.2016, Inc.</p>
+		  <p>&copy; 19.03.2016, Inc.</p>
           </div>
           <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
        </div>
